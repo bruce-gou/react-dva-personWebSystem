@@ -1,0 +1,86 @@
+#wrapper{
+    display: flex;
+    .logo {
+        height: 64px;
+        position: relative;
+        line-height: 64px;
+        padding-left: 24px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #002140;
+        overflow: hidden;
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            height: 32px;
+        }
+        h1{
+            color: white;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+            margin: 0 0 0 12px;
+            font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+    }
+    //头部切换菜单按钮样式
+    .trigger {
+        font-size: 20px;
+        line-height: 64px;
+        cursor: pointer;
+        -webkit-transition: all .3s,padding 0s;
+        transition: all .3s,padding 0s;
+        padding: 0 24px;
+        &:hover{
+            background: #e6f7ff;
+        }
+    }
+    .head{
+        height: 64px;
+        padding: 0 12px 0 0;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+        box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+        position: relative;
+    }
+    .head_right{
+        height:100%;
+        float: right;
+        .head_right_list{
+            cursor: pointer;
+            padding: 0 12px;
+            display: inline-block;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            height: 100%;
+            &:hover{
+                background: #e6f7ff;
+            }
+            .headIcon{
+                margin: 20px 8px 20px 0;
+                color: #1890ff;
+                background: rgba(255, 255, 255, 0.85);
+                vertical-align: middle;
+            }
+        }
+    }
+    #content{
+        padding: 24px;
+        minHeight: 280;
+        overflow: auto;
+    }
+}
+//页面头部用户头像下拉菜单样式
+.userNav{
+    width:160px;
+    .anticon{
+        margin-right: 8px;
+    }
+    :global(.anticon) {
+        margin-right: 8px;
+    }
+    :global(.ant-dropdown-menu-item) {
+        width: 160px;
+    }
+}
